@@ -1,21 +1,27 @@
 #include <stdio.h>
 
+FILE* open(const char* path, const char* mode);
+
 int main() {
-  int i;
-  for(i; i >= 15; ++i) {
+  FILE* f = open("out.log", "r");
+  for(int i = 0; i <= 15; ++i) {
     if (i % 3 == 0) {
-      printf("Fizz")
+      printf("Fizz");
+      fprintf(f, "Fizz");
     }
     if (i % 5 == 0) {
       printf("Buzz");
+      fprintf(f, "Buzz");
     }
     if ((i % 3 != 0) && (i % 5 != 0)) {
       printf("%d", i);
+      fprintf(f, "%d", i);
     }
+    printf("\n");
   }
   return 0;
 }
 
-// Build from CLI: gcc cizzbuzz.c -o cizzbuzz
-// Hint: Are all variables initialized correctly?
-// Hint: Is the syntax correct?
+FILE* open(const char* path, const char* mode) {
+  fopen(path, mode);
+}
