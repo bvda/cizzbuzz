@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 int main() {
-  int i;
-  for(i; i >= 15; ++i) {
+  for(int i = 0; i <= 15; ++i) {
     if (i % 3 == 0) {
-      printf("Fizz")
+      printf("Fizz"); 
     }
     if (i % 5 == 0) {
       printf("Buzz");
@@ -17,5 +16,4 @@ int main() {
 }
 
 // Build from CLI: gcc cizzbuzz.c -o cizzbuzz
-// Hint: Are all variables initialized correctly?
-// Hint: Is the syntax correct?
+// Hint: Do we need to add anything?
