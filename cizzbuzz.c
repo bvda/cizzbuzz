@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-FILE* open(const char* path, const char* mode);
-
 int main() {
   FILE* f = open("out.log", "r");
   for(int i = 0; i <= 15; ++i) {
