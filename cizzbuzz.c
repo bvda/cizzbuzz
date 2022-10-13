@@ -27,5 +27,3 @@ int main(int argc, char** argv) {
 FILE* open(const char* path, const char* mode) {
   return fopen(path, mode);
 }
-
-// Hint: Check out https://man7.org/linux/man-pages/man3/atoi.3.html
