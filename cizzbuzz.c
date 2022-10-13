@@ -24,4 +24,4 @@ FILE* open(const char* path, const char* mode) {
   fopen(path, mode);
 }
 
-// Hint: Check out https://man7.org/linux/man-pages/man3/fopen.3.html
+// Hint: Check out https://man7.org/linux/man-pages/man3/atoi.3.html
