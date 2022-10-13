@@ -4,13 +4,13 @@ int main() {
   int i;
   for(i; i >= 15; ++i) {
     if (i % 3 == 0) {
-      printf("Fizz");
+      printf("Fizz")
     }
     if (i % 5 == 0) {
       printf("Buzz");
     }
     if ((i % 3 != 0) && (i % 5 != 0)) {
-      printf("number=%d", i);
+      printf("%d", i);
     }
   }
   return 0;
